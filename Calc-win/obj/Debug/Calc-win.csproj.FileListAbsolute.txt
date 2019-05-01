@@ -1,0 +1,9 @@
+E:\大三\大三下\Windows编程\Calc-win\Calc-win\bin\Debug\Calc-win.exe.config
+E:\大三\大三下\Windows编程\Calc-win\Calc-win\bin\Debug\Calc-win.exe
+E:\大三\大三下\Windows编程\Calc-win\Calc-win\bin\Debug\Calc-win.pdb
+E:\大三\大三下\Windows编程\Calc-win\Calc-win\obj\Debug\Calc-win.csprojResolveAssemblyReference.cache
+E:\大三\大三下\Windows编程\Calc-win\Calc-win\obj\Debug\Calc_win.Form1.resources
+E:\大三\大三下\Windows编程\Calc-win\Calc-win\obj\Debug\Calc_win.Properties.Resources.resources
+E:\大三\大三下\Windows编程\Calc-win\Calc-win\obj\Debug\Calc-win.csproj.GenerateResource.Cache
+E:\大三\大三下\Windows编程\Calc-win\Calc-win\obj\Debug\Calc-win.exe
+E:\大三\大三下\Windows编程\Calc-win\Calc-win\obj\Debug\Calc-win.pdb
