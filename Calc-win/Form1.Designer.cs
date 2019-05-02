@@ -63,16 +63,19 @@
 			// 
 			// textBox1
 			// 
+			this.textBox1.BackColor = System.Drawing.Color.White;
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox1.Font = new System.Drawing.Font("宋体", 16F);
 			this.textBox1.Location = new System.Drawing.Point(31, 83);
 			this.textBox1.Multiline = true;
 			this.textBox1.Name = "textBox1";
+			this.textBox1.ReadOnly = true;
 			this.textBox1.Size = new System.Drawing.Size(528, 66);
 			this.textBox1.TabIndex = 0;
 			this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this.textBox1.WordWrap = false;
 			this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+			this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
 			// 
 			// f
 			// 
@@ -109,6 +112,7 @@
 			this.d.Text = "/";
 			this.d.UseVisualStyleBackColor = false;
 			this.d.Click += new System.EventHandler(this.operaButton_click);
+			this.d.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
 			// 
 			// button6
 			// 
@@ -128,6 +132,7 @@
 			this.button10.Name = "button10";
 			this.button10.Size = new System.Drawing.Size(72, 72);
 			this.button10.TabIndex = 1;
+			this.button10.TabStop = false;
 			this.button10.Text = "1";
 			this.button10.UseVisualStyleBackColor = true;
 			this.button10.Click += new System.EventHandler(this.numButton_click);
@@ -139,6 +144,7 @@
 			this.button7.Name = "button7";
 			this.button7.Size = new System.Drawing.Size(72, 72);
 			this.button7.TabIndex = 1;
+			this.button7.TabStop = false;
 			this.button7.Text = "4";
 			this.button7.UseVisualStyleBackColor = true;
 			this.button7.Click += new System.EventHandler(this.numButton_click);
@@ -150,6 +156,7 @@
 			this.button8.Name = "button8";
 			this.button8.Size = new System.Drawing.Size(161, 72);
 			this.button8.TabIndex = 1;
+			this.button8.TabStop = false;
 			this.button8.Text = "0";
 			this.button8.UseVisualStyleBackColor = true;
 			this.button8.Click += new System.EventHandler(this.numButton_click);
@@ -172,6 +179,7 @@
 			this.button12.Name = "button12";
 			this.button12.Size = new System.Drawing.Size(72, 72);
 			this.button12.TabIndex = 1;
+			this.button12.TabStop = false;
 			this.button12.Text = "5";
 			this.button12.UseVisualStyleBackColor = true;
 			this.button12.Click += new System.EventHandler(this.numButton_click);
@@ -183,6 +191,7 @@
 			this.button13.Name = "button13";
 			this.button13.Size = new System.Drawing.Size(72, 72);
 			this.button13.TabIndex = 1;
+			this.button13.TabStop = false;
 			this.button13.Text = "2";
 			this.button13.UseVisualStyleBackColor = true;
 			this.button13.Click += new System.EventHandler(this.numButton_click);
@@ -194,6 +203,7 @@
 			this.button14.Name = "button14";
 			this.button14.Size = new System.Drawing.Size(72, 72);
 			this.button14.TabIndex = 1;
+			this.button14.TabStop = false;
 			this.button14.Text = "9";
 			this.button14.UseVisualStyleBackColor = true;
 			this.button14.Click += new System.EventHandler(this.numButton_click);
@@ -209,6 +219,7 @@
 			this.c.Text = "x";
 			this.c.UseVisualStyleBackColor = false;
 			this.c.Click += new System.EventHandler(this.operaButton_click);
+			this.c.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
 			// 
 			// button16
 			// 
@@ -217,6 +228,7 @@
 			this.button16.Name = "button16";
 			this.button16.Size = new System.Drawing.Size(72, 72);
 			this.button16.TabIndex = 1;
+			this.button16.TabStop = false;
 			this.button16.Text = "6";
 			this.button16.UseVisualStyleBackColor = true;
 			this.button16.Click += new System.EventHandler(this.numButton_click);
@@ -228,6 +240,7 @@
 			this.button18.Name = "button18";
 			this.button18.Size = new System.Drawing.Size(72, 72);
 			this.button18.TabIndex = 1;
+			this.button18.TabStop = false;
 			this.button18.Text = ".";
 			this.button18.UseVisualStyleBackColor = true;
 			this.button18.Click += new System.EventHandler(this.numButton_click);
@@ -243,6 +256,7 @@
 			this.b.Text = "-";
 			this.b.UseVisualStyleBackColor = false;
 			this.b.Click += new System.EventHandler(this.operaButton_click);
+			this.b.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
 			// 
 			// a
 			// 
@@ -255,6 +269,7 @@
 			this.a.Text = "+";
 			this.a.UseVisualStyleBackColor = false;
 			this.a.Click += new System.EventHandler(this.operaButton_click);
+			this.a.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
 			// 
 			// eq
 			// 
@@ -267,6 +282,7 @@
 			this.eq.Text = "=";
 			this.eq.UseVisualStyleBackColor = false;
 			this.eq.Click += new System.EventHandler(this.g_Click);
+			this.eq.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
 			// 
 			// button17
 			// 
@@ -275,6 +291,7 @@
 			this.button17.Name = "button17";
 			this.button17.Size = new System.Drawing.Size(72, 72);
 			this.button17.TabIndex = 1;
+			this.button17.TabStop = false;
 			this.button17.Text = "3";
 			this.button17.UseVisualStyleBackColor = true;
 			this.button17.Click += new System.EventHandler(this.numButton_click);
@@ -290,7 +307,7 @@
 			this.textBox2.Name = "textBox2";
 			this.textBox2.ReadOnly = true;
 			this.textBox2.Size = new System.Drawing.Size(528, 60);
-			this.textBox2.TabIndex = 0;
+			this.textBox2.TabIndex = 1;
 			this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this.textBox2.WordWrap = false;
 			this.textBox2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -427,6 +444,7 @@
 			this.button21.Text = "^";
 			this.button21.UseVisualStyleBackColor = false;
 			this.button21.Click += new System.EventHandler(this.operaButton_click);
+			this.button21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
 			// 
 			// Form1
 			// 

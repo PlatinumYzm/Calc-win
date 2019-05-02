@@ -229,5 +229,94 @@ namespace Calc_win
 		{
 			textBox1.Text = Convert.ToString(Math.Acos(Convert.ToSingle(textBox1.Text))/Math.PI*180);
 		}
+
+		private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == '0')
+			{
+				button8.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '.')
+			{
+				button18.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '1')
+			{
+				button10.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '2')
+			{
+				button13.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '3')
+			{
+				button17.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '4')
+			{
+				button7.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '5')
+			{
+				button12.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '6')
+			{
+				button16.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '7')
+			{
+				button6.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '8')
+			{
+				button11.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '9')
+			{
+				button14.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '+')
+			{
+				a.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '-')
+			{
+				b.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == 'x')
+			{
+				c.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '/')
+			{
+				d.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar == '^')
+			{
+				button21.PerformClick();
+				e.Handled = true;
+			}
+			if (e.KeyChar== (char)13)
+			{
+				eq.PerformClick();
+				e.Handled = true;
+			}
+		}
 	}
 }
